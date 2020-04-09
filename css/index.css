@@ -1,0 +1,492 @@
+body {
+    font-size: 14px;
+}
+
+/* 头部样式开始 */
+header {
+    height: 58px;
+    background: #191d3a;
+}
+
+header .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header h1 a {
+    display: block;
+    width: 157px;
+    height: 35px;
+    font-size: 0;
+    background-image: url(../img/logo.png);
+}
+
+header ul {
+    margin-left: 48px;
+    height: 100%;
+}
+
+header ul li {
+    float: left;
+    width: 87px;
+    height: 100%;
+
+    border-right: 1px solid #252947;
+
+}
+
+header ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+header ul li a.active {
+    color: #e2e4ed;
+    background-color: #252947;
+}
+
+header .join {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 34px;
+    color: #fff;
+    background: #38b774;
+    margin-left: 10px;
+    margin-right: auto;
+    border-radius: 3px;
+}
+
+header .cnen a {
+    margin: 0 5px;
+}
+
+header .cnen a.active {
+    color: #38b774;
+}
+
+header .cnen a:hover {
+    color: #38b774;
+}
+
+/* 头部样式结束 */
+
+/* banner部分样式开始 */
+.banner {
+    position: relative;
+    height: 460px;
+    background: url(../img/banner.jpg)no-repeat;
+    background-position: center center;
+}
+
+.banner .container {
+    position: relative;
+    height: 100%;
+}
+
+.banner .cont-right {
+    width: 450px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+}
+
+.banner .cont-right .games {
+    width: 115px;
+    position: absolute;
+    top: 76px;
+    right: 0;
+    background: #fff;
+    border-radius: 15px;
+}
+
+.banner .cont-right .games .game-title {
+    height: 38px;
+    line-height: 38px;
+    padding-left: 16px;
+    background: url(../img/online.png);
+    cursor: pointer;
+}
+
+.banner .cont-right .games:hover ul {
+    display: block;
+}
+
+.banner .cont-right .games ul {
+    display: none;
+    padding-bottom: 12px;
+}
+
+.banner .cont-right .games ul li {
+    float: left;
+}
+
+.banner .cont-right .games ul li a {
+    display: block;
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+    background: url(../img/online.png);
+    background-position: -1px -48px;
+}
+
+.banner .cont-right .games ul li:nth-child(2) a {
+    background-position: -51px -48px;
+}
+
+.banner .cont-right .games ul li:nth-child(3) a {
+    background-position: -100px -48px;
+}
+
+.banner .cont-right p {
+    margin-top: 168px;
+}
+
+.banner .cont-right .download {
+    margin-top: 36px;
+}
+
+.banner .cont-right .download>span {
+    padding-left: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    background: url(../img/download.png) no-repeat;
+    background-position: 6px 5px;
+}
+
+.banner .cont-right .download ul {
+    margin-top: 16px;
+}
+
+.banner .cont-right .download ul li {
+    float: left;
+    width: 83px;
+    height: 106px;
+    background: rgba(255, 255, 255, 0.7);
+    margin-right: 1px;
+}
+
+.banner .cont-right .download ul li:hover {
+    background: #fff;
+}
+
+.banner .cont-right .download ul li a {
+    display: block;
+    padding-top: 85%;
+    width: 100%;
+    height: 30px;
+    color: #444866;
+    text-align: center;
+    background: url(../img/pad.png) no-repeat;
+    background-position: 30px -169px;
+}
+
+.banner .cont-right .download ul li:nth-child(2) a {
+    background-position: 30px 30px;
+}
+
+.banner .cont-right .download ul li:nth-child(3) a {
+    background-position: 22px -68px;
+}
+
+.banner .cont-right .download ul li:nth-child(4) a {
+    background-position: 22px -476px;
+}
+
+.banner .cont-right .download ul .ewm {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 13px;
+}
+
+.banner .selector {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    width: 100px;
+    transform: translateX(-50%);
+}
+
+.banner .selector li {
+    margin: auto;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.banner .selector li.active {
+    background: #fff;
+}
+
+/* banner部分样式结束 */
+
+/* section部分样式开始 */
+.section {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.section .container .group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section .container .group .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 220px;
+    text-align: center;
+}
+
+.section .container .group .item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.section .group .item b {
+    margin-top: 9px;
+    color: #444866;
+}
+
+.section .group .item span {
+    margin-top: 19px;
+    font-size: 12px;
+    color: #38b774;
+}
+
+.section .group .item span::after {
+    content: " ";
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    background: url(../img/arrow.png)no-repeat;
+    background-position: 9px 2px;
+}
+
+.section .group .item:hover,
+.section .group .item:hover b,
+.section .group .item:hover span {
+    background: #38b774;
+    color: #fff;
+}
+
+.section .group .item:hover span::after {
+    background: url(../img/arrow_hover.png)no-repeat;
+    background-position: 9px 2px;
+
+}
+
+.section .line {
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+}
+
+.section .line hr {
+    flex: 1;
+}
+
+.section .line ul {
+    padding-right: 15px;
+}
+
+.section .line ul li {
+    float: left;
+    margin-left: 15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #b5c0cb;
+    cursor: pointer;
+}
+
+.section .line ul li.active {
+    background: #2FBC71;
+}
+
+/* section部分样式结束 */
+
+/* content部分样式开始 */
+
+.content {
+    margin-top: 50px;
+    padding-bottom: 50px;
+    background: url(../img/indexmainbg.jpg);
+}
+
+.content .container {
+    display: flex;
+    height: 310px;
+}
+
+.content .main-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: url(../img/bynewsbg.jpg);
+}
+
+.content .main-left .more {
+    margin: 40px auto;
+    width: 64px;
+    height: 26px;
+    display: block;
+    text-align: center;
+    border: 1px solid #33b972;
+    color: #33b972;
+    border-radius: 5px;
+    font-size: 12px
+}
+
+.content .main-left .more:hover {
+    color: #fff;
+    background: #33b972;
+}
+
+.content .main-left ul {
+    flex: 1;
+    margin-top: 30px;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content .main-left ul li {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #DBE1E7;
+}
+
+.content .main-left ul li a {
+    margin-right: auto;
+    width: 395px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #444866;
+}
+
+.content .main-left ul li a:hover {
+    color: #33b972;
+}
+
+.content .main-left ul li span {
+    color: #afbecf;
+}
+
+.content .main-right {
+    position: relative;
+    flex: 1;
+    background-image: url(../img/byshzpbg.jpg);
+}
+
+.content .main-right .more {
+    margin: 40px auto;
+    width: 64px;
+    height: 26px;
+    display: block;
+    text-align: center;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 12px
+}
+
+.content .main-right .more:hover {
+    color: #33b972;
+    background: #fff;
+}
+
+.content .main-right .title,
+.content .main-right h5,
+.content .main-right ul {
+    position: absolute;
+}
+
+.content .main-right .title {
+    top: 45px;
+    left: 80px;
+    color: #fff;
+}
+
+.content .main-right h5 {
+    left: 20px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.content .main-right ul {
+    top: 130px;
+    left: 20px;
+    width: 305px;
+    height: 152px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content .main-right ul li {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #6FDEA3;
+}
+
+.content .main-right ul li a {
+    color: #fff;
+}
+
+/* content部分样式结束 */
+
+/*底部部分样式开始 */
+footer {
+    height: 190px;
+    background: #191d3a;
+}
+
+footer .container {
+    padding-top: 20px;
+}
+
+footer ul {
+    padding: 18px 0;
+    color: #818496;
+}
+
+footer ul li {
+    float: left;
+}
+
+footer ul li a {
+    color: #818496;
+    font-size: 12px;
+    margin: 0 10px;
+}
+
+footer ul li:nth-child(1) a {
+    margin-left: 0;
+}
+
+footer article p {
+    height: 52px;
+    line-height: 52px;
+    color: #6c6e7e;
+    font-size: 12px;
+}
+
+footer article p img {
+    width: auto;
+    height: 100%;
+}
+
+/* 底部部分样式结束 */
